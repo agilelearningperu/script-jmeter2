@@ -1,0 +1,5 @@
+nombre,apellidos,precio,deposito,fecha_inicio,fecha_fin,adicional
+John,Smith,123,true,2018-01-01,2019-01-01,prueba 1
+Alexander,Avila,114321,true,2018-01-01,2019-01-01,prueba 2
+Michael,Johnson,654,false,2018-01-01,2019-01-01,prueba 3
+Emily,Williams,768,false,2018-01-01,2019-01-01,prueba 4
