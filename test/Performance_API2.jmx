@@ -25,15 +25,15 @@
             <stringProp name="52469">500</stringProp>
             <stringProp name="53">5</stringProp>
           </collectionProp>
-          <collectionProp name="-608682140">
-            <stringProp name="49">1</stringProp>
+          <collectionProp name="-1821643837">
+            <stringProp name="50">2</stringProp>
             <stringProp name="49586">200</stringProp>
             <stringProp name="1567">10</stringProp>
             <stringProp name="51508">400</stringProp>
             <stringProp name="53">5</stringProp>
           </collectionProp>
-          <collectionProp name="123799789">
-            <stringProp name="49">1</stringProp>
+          <collectionProp name="-1089161908">
+            <stringProp name="50">2</stringProp>
             <stringProp name="50547">300</stringProp>
             <stringProp name="1567">10</stringProp>
             <stringProp name="50547">300</stringProp>
@@ -54,7 +54,7 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
       </kg.apc.jmeter.threads.UltimateThreadGroup>
       <hashTree>
-        <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="Tiempo de espera" enabled="true">
+        <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="Tiempo de espera">
           <stringProp name="maximumValue">900</stringProp>
           <stringProp name="minimumValue">50</stringProp>
           <stringProp name="outputFormat"></stringProp>
@@ -66,7 +66,7 @@
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config">
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="fileEncoding"></stringProp>
-          <stringProp name="filename">booking-data.csv</stringProp>
+          <stringProp name="filename">data/booking-data.csv</stringProp>
           <boolProp name="ignoreFirstLine">true</boolProp>
           <boolProp name="quotedData">false</boolProp>
           <boolProp name="recycle">true</boolProp>
@@ -77,7 +77,7 @@
         <hashTree/>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create token" enabled="true"/>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="create token" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="create token">
             <stringProp name="HTTPSampler.domain">restful-booker.herokuapp.com</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
             <stringProp name="HTTPSampler.path">auth</stringProp>
@@ -128,7 +128,7 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Update Booking"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Update Booking" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get booking" enabled="true">
             <stringProp name="HTTPSampler.domain">restful-booker.herokuapp.com</stringProp>
@@ -161,7 +161,7 @@
             </ConstantTimer>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="update booking">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="update booking" enabled="true">
             <stringProp name="HTTPSampler.domain">restful-booker.herokuapp.com</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
             <stringProp name="HTTPSampler.path">booking/${id}</stringProp>
@@ -247,7 +247,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">/var/jenkins_home/workspace/script-jmeter/results/resultados.jtl</stringProp>
+          <stringProp name="filename">/var/jenkins_home/workspace/script-jmeter2/results/resultados.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
