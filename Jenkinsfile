@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         JMETER_PATH = "/opt/jmeter/bin/jmeter"
-        TEST_PLAN = "tests/Performance_API2.jmx"
+        TEST_PLAN = "test/Performance_API2.jmx"
         RESULT_DIR = "results"
         REPORT_DIR = "reportes"
     }
